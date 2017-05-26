@@ -19,8 +19,23 @@
     </header>
 
     <section>
-        <p>In this <em>sample site</em>, we'll show a list of <a href = "http://github.com">Github </a> projects and the data
-            about <strong> projects </strong></p>
+        <p>In this <em>sample site</em>, we'll show a list of <a href="http://github.com">Github </a> projects and the data
+            about <strong> those projects </strong></p>
+
+        <form action= "" method="POST">
+            <label for="searchPhrase">Search Phrase : </label>
+            <input name="searchPhrase" id="searchPhrase"/>
+            <input type="submit" value="search"/><br>
+            <input type="checkbox" name="useStars" id="useStars" checked/>
+            <label for="useStars">Use Stars?</label> <br> 
+            <label for="langChoice">Language : </label>
+            <select name="langChoice" id="langChoice">
+                <option>All</option>
+                <option selected>Javascript</option>
+                <option>C#</option>
+                <option>Java</option>
+                <option>Ruby</option>
+        </form>
     </section>
 
     <footer>
