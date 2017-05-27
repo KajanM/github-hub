@@ -68,6 +68,15 @@ body {
     padding: 5px;
 }
 
+header nav{
+    float: right;
+}
+
+header nav li{
+    display: inline;
+    margin-right: 5px;
+}
+
 a {
     color: green;
 }
