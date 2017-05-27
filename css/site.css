@@ -49,6 +49,16 @@ body {
 .simple-form{
     padding: 2px;
     width:300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#results{
+    padding: 2px;
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+
 }
 
 .container{
