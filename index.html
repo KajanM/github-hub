@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <title>Github Hub</title>
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <link rel="stylesheet" href="css/site.css" />
 </head>
 
 <body>
     <header>
-        <h1><img src="img/logo.gif"></h1>
-        <p>This is a site to search Github for interesting projects</p>
+        <div><img src="img/logo.gif"></div>
+        <div>This is a site to search Github for interesting projects</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home </a></li>
@@ -21,14 +23,13 @@
         </nav>
     </header>
 
-    <section>
+    <section id="main">
         <p>In this <em>sample site</em>, we'll show a list of <a href="http://github.com">Github </a> projects and the data
-            about <strong> those projects </strong></p>
+            about <strong> those projects. </strong></p>
 
         <form action= "" method="POST">
             <label for="searchPhrase">Search Phrase : </label>
-            <input name="searchPhrase" id="searchPhrase"/>
-            <input type="submit" value="search"/><br>
+            <input type="text" searchPhrase" id="searchPhrase"/> <br>
             <input type="checkbox" name="useStars" id="useStars" checked/>
             <label for="useStars">Use Stars?</label> <br> 
             <label for="langChoice">Language : </label>
@@ -38,6 +39,8 @@
                 <option>C#</option>
                 <option>Java</option>
                 <option>Ruby</option>
+            </select> <br>
+            <input type="submit" value="search"/>
         </form>
     </section>
 

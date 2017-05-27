@@ -1,0 +1,62 @@
+/* site.css */
+header, footer {
+  background-color: lightgray;
+  border: solid 1px black;
+  /*font-family: 'Times New Roman', serif;*/
+}
+
+footer {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+body {
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+#main{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #202020;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+#main label{
+  font-weight: bold
+}
+
+#main input[type="text"],
+#main select{
+  width:  150px;
+}
+
+#main input[type="submit"]{
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+a {
+  color: green;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
