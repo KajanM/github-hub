@@ -2,6 +2,10 @@
     index.html
  */
 
+$(document).ready(function () {
+
+
+
 "use strict;"
 
 /*var msg = "hello javascript";
@@ -25,3 +29,15 @@ showItThenf("hello again", function () {
 
 var resultsList = $("#resultsList");
 resultsList.text("This is from jQuery");
+
+var toggleButton = $("#toggleButton");
+toggleButton.on("click", function () {
+    resultsList.toggle(500);
+
+    if(toggleButton.text() == "Hide") toggleButton.text("Show");
+    else toggleButton.text("Hide");
+
+
+});
+
+});
