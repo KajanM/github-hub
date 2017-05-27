@@ -2,6 +2,8 @@
     index.html
  */
 
+"use strict;"
+
 var msg = "hello javascript";
 console.log(msg);
 
