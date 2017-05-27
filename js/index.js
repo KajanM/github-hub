@@ -4,28 +4,7 @@
 
 $(document).ready(function () {
 
-
-
-"use strict;"
-
-/*var msg = "hello javascript";
-console.log(msg);*/
-
-/*
-var showIt = function (msg) {
-    console.log(msg);
-
-};
-
-function showItThenf(msg, callback){
-    console.log(msg);
-    callback();
-}
-
-showIt("hello");
-showItThenf("hello again", function () {
-    console.log("callback called")
-});*/
+    "use strict;"
 
     var resultsList = $("#resultsList");
     resultsList.text("This is from jQuery");
@@ -39,46 +18,31 @@ showItThenf("hello again", function () {
 
     });
 
-   /* var results = [{
-          name: "jQuery",
-           language: "JavaScript",
-           score: 4.5,
-           showLog: function() {
 
-           },
-           owner: {
-             login: "shawnwildermuth",
-             id: 123456
-           }
-         }, {
-           name: "jQuery UI",
-           language: "JavaScript",
-           score: 3.5,
-           showLog: function() {
-       },
-      owner: {
-             login: "shawnwildermuth",
-             id: 123456
-           }
-         }];*/
+    $("#gitHubSearchForm").on("submit",function () {
 
-    var githubSearch = "https://api.github.com/search/repositories?q=jquery+language:javascript&sort=stars";
+        var searchPhrase = $("#searchPhrase").val();
+        var useStars = $("#useStars").val();
+        var langChoice = $("#langChoice").val();
 
-   /* $.get(githubSearch)
-        .success(function (r) {
-        console.log(r.items.length);
-        displayResults(r.items);
+        if(searchPhrase) {
+
+            resultsList.text("Performing search...");
+            var githubSearch = "https://api.github.com/search/repositories?q=" + encodeURIComponent(searchPhrase);
+
+            if(langChoice != "All"){
+                githubSearch += "+language:" + encodeURIComponent(langChoice);
+            }
+
+            if(useStars){
+                githubSearch += "&sort=stars";
+            }
+            $.get(githubSearch, function (r) {
+                displayResults(r.items);
+            });
+        }
+        return false;
     })
-        .fail(function (err) {
-        console.log("Failed to query GitHub");
-    });*/
-
-    $.get(githubSearch, function(r) {
-            //console.log(r.items.length);
-            displayResults(r.items);
-        }/*, function() {
-            console.log("Failed to query GitHub");
-        }*/);
 
 
     function displayResults(results) {
