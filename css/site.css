@@ -1,18 +1,20 @@
 /* site.css */
 header, footer {
-  background-color: lightgray;
-  border: solid 1px black;
-  /*font-family: 'Times New Roman', serif;*/
+    background-color: lightgray;
+    border: solid 1px black;
+    /*font-family: 'Times New Roman', serif;*/
 }
 
 footer {
-  padding: 10px;
-  border-radius: 3px;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 body {
-  font-family: Segoe UI, Arial, Helvetica, sans-serif;
-  font-size: 14px;
+
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: darkgreen;
 }
 
 #main{
@@ -24,36 +26,45 @@ body {
 }
 
 .bordered-image{
-    border: solid 1px #444; 
+    border: solid 1px #444;
     border-radius: 2px;
 }
 .simple-form label{
-  font-weight: bold
+    font-weight: bold
 }
 
 .simple-form input[type="text"],
 .simple-form select{
-  width:  150px;
+    width:  150px;
 }
 
 .simple-form input[type="submit"]{
-  background-color: green;
-  color: white;
-  border-radius: 15px;
-  padding: 5px;
-  margin-top: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 .simple-form{
-  padding: 2px;
+    padding: 2px;
+    width:300px;
 }
+
+.container{
+    width: 989px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+}
+
 a {
-  color: green;
+    color: green;
 }
 
 html, body {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 
